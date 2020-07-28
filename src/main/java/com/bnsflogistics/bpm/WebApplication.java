@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @SpringBootApplication
 public class WebApplication {
@@ -46,7 +45,7 @@ public class WebApplication {
                 .b(2)
                 .c("C")
                 .d(LocalDate.now())
-                .thisWillBeDeletedInNextRelease(LocalDateTime.now())
+//                .thisWillBeDeletedInNextRelease(LocalDateTime.now())
                 .build());
 
         return processInstance.getId();
